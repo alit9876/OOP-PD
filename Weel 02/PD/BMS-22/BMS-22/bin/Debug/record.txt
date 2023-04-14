@@ -1,0 +1,4 @@
+ali,tariq,0,0,1,0,00-00-00,00-00-00,0,0, ,UnFreeze,0,No Complain
+haseeb,tariq,S,1444,3,0,00-00-00,00-00-00,0,0, ,UnFreeze,12,No Complain
+raamiz,tariq,C,10567,4,120,12-09-23,12-12-25,0,0, ,Freeze,12,No Complain
+bilal,12345,S,1200,7,0,00-00-00,00-00-00,0,0, ,UnFreeze,0,No Complain
