@@ -1,7 +1,0 @@
-C:\Users\dell\source\repos\BMS-22\BMS-22\bin\Debug\BMS-22.exe.config
-C:\Users\dell\source\repos\BMS-22\BMS-22\bin\Debug\BMS-22.exe
-C:\Users\dell\source\repos\BMS-22\BMS-22\bin\Debug\BMS-22.pdb
-C:\Users\dell\source\repos\BMS-22\BMS-22\obj\Debug\BMS-22.csproj.AssemblyReference.cache
-C:\Users\dell\source\repos\BMS-22\BMS-22\obj\Debug\BMS-22.csproj.CoreCompileInputs.cache
-C:\Users\dell\source\repos\BMS-22\BMS-22\obj\Debug\BMS-22.exe
-C:\Users\dell\source\repos\BMS-22\BMS-22\obj\Debug\BMS-22.pdb

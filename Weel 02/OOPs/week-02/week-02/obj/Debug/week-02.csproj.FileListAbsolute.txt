@@ -1,7 +1,0 @@
-C:\Users\dell\source\repos\week-02\week-02\bin\Debug\week-02.exe.config
-C:\Users\dell\source\repos\week-02\week-02\bin\Debug\week-02.exe
-C:\Users\dell\source\repos\week-02\week-02\bin\Debug\week-02.pdb
-C:\Users\dell\source\repos\week-02\week-02\obj\Debug\week-02.csproj.AssemblyReference.cache
-C:\Users\dell\source\repos\week-02\week-02\obj\Debug\week-02.csproj.CoreCompileInputs.cache
-C:\Users\dell\source\repos\week-02\week-02\obj\Debug\week-02.exe
-C:\Users\dell\source\repos\week-02\week-02\obj\Debug\week-02.pdb
