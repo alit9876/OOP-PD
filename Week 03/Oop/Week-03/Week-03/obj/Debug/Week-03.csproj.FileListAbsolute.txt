@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\Week-03\Week-03\bin\Debug\Week-03.exe.config
+C:\Users\dell\source\repos\Week-03\Week-03\bin\Debug\Week-03.exe
+C:\Users\dell\source\repos\Week-03\Week-03\bin\Debug\Week-03.pdb
+C:\Users\dell\source\repos\Week-03\Week-03\obj\Debug\Week-03.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\Week-03\Week-03\obj\Debug\Week-03.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\Week-03\Week-03\obj\Debug\Week-03.exe
+C:\Users\dell\source\repos\Week-03\Week-03\obj\Debug\Week-03.pdb
