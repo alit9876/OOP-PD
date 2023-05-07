@@ -1,4 +1,4 @@
 ali,tariq,0,0,1,0,00-00-00,00-00-00,0,0, ,UnFreeze,0,No Complain,admin
-haseeb,tariq,S,1888,3,0,0,00-00-00,0,0, ,UnFreeze,12,No Complain,User
+haseeb,tariq,S,788,3,1000,121-32-,12-32,0,0, ,UnFreeze,12,No Complain,User
 raamiz,tariq,C,10567,4,120,12-09-23,12-12-25,0,0, ,UnFreeze,12,No Complain,User
 bilal,12345,S,1200,5,0,,,0,0,,UnFreeze,0,No Complain,User

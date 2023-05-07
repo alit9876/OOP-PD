@@ -15,7 +15,7 @@ namespace BMS_22
         static void Main(string[] args)
         {
             int currentindex = 0;
-            int bankbalance = 1200;
+            int bankbalance = 12000;
             List<data> s = new List<data>();
             data run = new data();
             loaddata(s);
@@ -53,7 +53,8 @@ namespace BMS_22
                         }
                         else if (signin != null)
                         {
-                            if (s[currentindex].status == "UnFreeze")
+                            string value = s[currentindex].freezestatus();
+                            if (value == "UnFreeze")
                             {
                                 if (s[currentindex].role == "admin")
                                 {
@@ -211,7 +212,8 @@ namespace BMS_22
         static bool signinf(List<data> s, ref int currentindex)
         {
             bool ischeck = false;
-            if(s[currentindex].status == "Freeze")
+            string value = s[currentindex].freezestatus();
+            if (value == "Freeze")
             {
                 ischeck = true;
             }
@@ -374,6 +376,10 @@ namespace BMS_22
         }
         static void accountholderdetail(List<data> s, int currentindex)
         {
+            int loan = 0;
+            string limitloan = "";
+            string issuelaons = "";
+            s[currentindex].returnloan(ref loan, ref issuelaons, ref limitloan);
             Console.WriteLine("    Acount holder's Details");
             Console.WriteLine();
             Console.WriteLine(" Account Number: " + s[currentindex].accountnumbers);
@@ -381,15 +387,19 @@ namespace BMS_22
             Console.WriteLine(" Account holder's Password: " + s[currentindex].passwords);
             Console.WriteLine(" Account holder Type: " + s[currentindex].types);
             Console.WriteLine(" Current Balance: " + s[currentindex].balances);
-            Console.WriteLine(" Account holder Pending loan: " + s[currentindex].loans);
+            Console.WriteLine(" Account holder Pending loan: " + loan);
         }
         static void accountdetailsloans(List<data> s, int currentindex)
         {
+            int loan=0;
+            string limitloan="";
+            string issuelaons = "";
             Console.WriteLine(" Account number: " + s[currentindex].accountnumbers);
             Console.WriteLine(" Balance: " + s[currentindex].balances);
-            Console.WriteLine(" Balance loan: " + s[currentindex].loans);
-            Console.WriteLine(" Date of Issue loan: " + s[currentindex].issueloans);
-            Console.WriteLine(" Date of returning loan: " + s[currentindex].limitloans);
+            s[currentindex].returnloan(ref loan, ref issuelaons, ref limitloan);
+            Console.WriteLine(" Balance loan: " + loan);
+            Console.WriteLine(" Date of Issue loan: " + issuelaons);
+            Console.WriteLine(" Date of returning loan: " + limitloan);
             Console.WriteLine();
         }
         
@@ -805,20 +815,22 @@ namespace BMS_22
                 {
                     printheading(" Return loan");
                     Console.WriteLine();
-
-                    if (s[currentindex].loans != 0)
+                    int loan=0;
+                    int value = s[currentindex].loanvalu(loan);
+                    if (value != 0)
                     {
                         accountdetailsloans(s,currentindex);
                         Console.Write(" Amount to pay: ");
                         returnloanamount = int.Parse(Console.ReadLine());
                         s[currentindex].returnloan(returnloanamount);
-                        if (s[currentindex].loans < 0)
+                        if ((value < 0))
                         {
-                            s[currentindex].loans = 0;
+                            value = 0;
                         }
                         Console.WriteLine();
                         Console.WriteLine(" Your Balance has been Updated ");
-                        Console.WriteLine(" Remaining balance loan: " + s[currentindex].loans);
+                        int value1 = s[currentindex].rloan();
+                        Console.WriteLine(" Remaining balance loan: " + value1);
                     }
                     else
                     {
@@ -928,13 +940,21 @@ namespace BMS_22
         }
         static void listofloanholder(data s)
         {
-            Console.WriteLine(" " + s.names + "\t" + s.loans + "\t" + s.issueloans + "\t" + s.limitloans);
+            int loan = 0;
+            string limitloan = "";
+            string issuelaons = "";
+            s.returnloan(ref loan, ref issuelaons, ref limitloan);
+            Console.WriteLine(" " + s.names + "\t" + loan + "\t" + issuelaons + "\t" + limitloan);
         }
         static void listofinsuranceholder(data s)
         {
-            if (s.insurances != 0)
+            int insu = 0;
+            int du = 0;
+            string installment = "";
+            s.retruninsurance(ref insu, ref du, ref installment);
+            if (insu != 0)
             {
-                Console.WriteLine(" " + s.names + "\t" + s.insurances + "\t" + s.durations + "\t" + s.installments);
+                Console.WriteLine(" " + s.names + "\t" + insu + "\t" + du + "\t" + installment);
             }
         }
         static void seeallcomplains(data s,int index)
@@ -948,8 +968,9 @@ namespace BMS_22
         }
         static void masterlist(data s)
         {
+            string status = s.freezestatus();
             Console.WriteLine();
-            Console.WriteLine(" " + s.types + "\t" + s.accountnumbers + "\t " + "\t" + s.names + "\t" + s.passwords + "\t" + s.balances + "\t" + s.status);
+            Console.WriteLine(" " + s.types + "\t" + s.accountnumbers + "\t " + "\t" + s.names + "\t" + s.passwords + "\t" + s.balances + "\t" + status);
         }
         static string changeadminoption()
         {
@@ -1020,7 +1041,8 @@ namespace BMS_22
                         duration = int.Parse(Console.ReadLine());
                         s[position].freezeueraccount(duration);
                         Console.WriteLine();
-                        Console.WriteLine(" The user account has been freezed for " + s[position].fdurations + " days");
+                        int value = s[position].freezeduration();
+                        Console.WriteLine(" The user account has been freezed for " + value + " days");
                         Console.WriteLine();
                         Console.WriteLine(" Account list Updated. . .");
                     }
@@ -1139,7 +1161,9 @@ namespace BMS_22
                     Console.WriteLine();
                     for (int index = 1; index < s.Count; index++)
                     {
-                        if (s[index].loans != 0)
+                        int loan = 0;
+                        int value = s[index].loanvalu(loan);
+                        if (value != 0)
                         {
                             listofloanholder(s[index]);
                         }
@@ -1336,16 +1360,19 @@ namespace BMS_22
                     s1.types = getfield(record, 3);
                     s1.balances = int.Parse(getfield(record, 4));
                     s1.accountnumbers = int.Parse(getfield(record, 5));
-                    s1.loans = int.Parse(getfield(record, 6));
-                    s1.issueloans = getfield(record, 7);
-                    s1.limitloans = getfield(record, 8);
-                    s1.insurances = int.Parse(getfield(record, 9));
-                    s1.durations = int.Parse(getfield(record, 10));
-                    s1.installments = getfield(record, 11);
-                    s1.status = getfield(record, 12);
-                    s1.fdurations = int.Parse(getfield(record, 13));
+                    int loans = int.Parse(getfield(record, 6));
+                    string issueloans = getfield(record, 7);
+                    string limitloans = getfield(record, 8);
+                    int insu = int.Parse(getfield(record, 9));
+                    int du = int.Parse(getfield(record, 10));
+                    string installment = getfield(record, 11);
+                    string status = getfield(record, 12);
+                    int fdurations = int.Parse(getfield(record, 13));
                     s1.complains = getfield(record, 14);
                     s1.role = getfield(record, 15);
+                    s1.insertloandata(loans, limitloans, issueloans);
+                    s1.insertinsurancedata(insu, du, installment);
+                    s1.insertfreezedata( status, fdurations);
                     s.Add(s1);
                 }
                 myfile.Close();
@@ -1373,19 +1400,30 @@ namespace BMS_22
                 StreamWriter file = new StreamWriter(path, false);
                 for (int index = 0; index < s.Count; index++)
                 {
+                    int insu = 0;
+                    int du = 0;
+                    string installment = "";
+                    string role = "";
+                    int fd = 0;
+                    s[index].returnfreeze(ref role, ref fd);
+                    s[index].retruninsurance(ref insu, ref du, ref installment);
+                    int loan = 0;
+                    string limitloan = "";
+                    string issuelaons = "";
+                    s[index].returnloan(ref loan, ref issuelaons, ref limitloan);
                     file.Write(s[index].names + ",");
                     file.Write(s[index].passwords + ",");
                     file.Write(s[index].types + ",");
                     file.Write(s[index].balances + ",");
                     file.Write(s[index].accountnumbers + ",");
-                    file.Write(s[index].loans + ",");
-                    file.Write(s[index].issueloans + ",");
-                    file.Write(s[index].limitloans + ",");
-                    file.Write(s[index].insurances + ",");
-                    file.Write(s[index].durations + ",");
-                    file.Write(s[index].installments + ",");
-                    file.Write(s[index].status + ",");
-                    file.Write(s[index].fdurations + ",");
+                    file.Write(loan + ",");
+                    file.Write(issuelaons + ",");
+                    file.Write(limitloan + ",");
+                    file.Write(insu + ",");
+                    file.Write(du + ",");
+                    file.Write(installment + ",");
+                    file.Write(role + ",");
+                    file.Write(fd + ",");
                     file.Write(s[index].complains + ",");
                     file.WriteLine(s[index].role);
                 }

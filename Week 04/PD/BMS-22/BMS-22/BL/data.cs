@@ -7,36 +7,106 @@ using System.Threading.Tasks;
 
 namespace BMS_22.BL
 {
+    class insurance
+    {
+        public int insurances;
+        public int durations;
+        public string installments;
+    }
+    class loan
+    {
+        public int loans;
+        public string issueloans;
+        public string limitloans;
+    }
+     class freeze
+    {
+        public string status;
+        public int fdurations;
+    }
+
     class data
     {
+         freeze fdata = new freeze();
+        insurance idata = new insurance();
+         loan ldata = new loan();
         public string names;
         public string passwords;
         public string types;
         public int balances;
         public int accountnumbers;
-        public int loans;
-        public string issueloans;
-        public string limitloans;
-        public int insurances;
-        public int durations;
-        public string installments;
-        public string status;
-        public int fdurations;
         public string complains;
         public string role;
         public data()
         {
-            
+
         }
-        public data(string name, string password,string type, int balance)
+        public int rloan()
+        {
+            int loan = 0;
+            loan = ldata.loans;
+            return loan;
+        }
+        public void insertloandata(int loan, string limit, string issue)
+        {
+            ldata.loans = loan;
+            ldata.limitloans = limit;
+            ldata.issueloans = issue;
+        }
+        public int loanvalu(int loan)
+        {
+            loan = ldata.loans;
+            return loan;
+        }
+        public void returnloan(ref int loan, ref string issuelaons, ref string limitloan)
+        {
+            loan = ldata.loans;
+            issuelaons = ldata.issueloans;
+            limitloan = ldata.limitloans;
+        }
+        public void insertinsurancedata(int insu, int du, string installment)
+        {
+            idata.insurances = insu;
+            idata.durations = du;
+            idata.installments = installment;
+        }
+        public void retruninsurance(ref int insu, ref int du, ref string installment)
+        {
+            insu = idata.insurances;
+            du = idata.durations;
+            installment = idata.installments;
+        }
+        public data(string name, string password, string type, int balance)
         {
             this.names = name;
             this.passwords = password;
             this.types = type;
             this.balances = balance;
             this.complains = "No Complain";
-            this.status = "UnFreeze";
+            fdata.status = "UnFreeze";
         }
+        public string freezestatus()
+        {
+            string sat;
+            sat = fdata.status;
+            return sat;
+        }
+        public int freezeduration()
+        {
+            int sat;
+            sat = fdata.fdurations;
+            return sat;
+        }
+        public void insertfreezedata(string role, int fd)
+        {
+            fdata.status = role;
+            fdata.fdurations = fd;
+        }
+        public void returnfreeze(ref string role, ref int fd) 
+            {
+             role = fdata.status;
+             fd = fdata.fdurations;
+            }
         public data(string name, string password)
         {
             names = name;
@@ -83,9 +153,9 @@ namespace BMS_22.BL
         //           user functionailty
         public void saveloandetails (string issueloan, string limitloan, int loan, ref int bankbalance)
         {
-            loans = loan;
-            issueloans = issueloan;
-            limitloans = limitloan;
+            ldata.loans = loan;
+            ldata.issueloans = issueloan;
+            ldata.limitloans = limitloan;
             bankbalance = bankbalance - loan;
         }
         public void depositmoney(int deposit)
@@ -145,9 +215,9 @@ namespace BMS_22.BL
         }
         public void applyforinsurance(int insurance, int duration, string installment)
         {
-            insurances = insurance;
-            durations = duration;
-            installments = installment;
+            idata.insurances = insurance;
+            idata.durations = duration;
+            idata.installments = installment;
         }
         public void payable(int amount)
         {
@@ -156,7 +226,7 @@ namespace BMS_22.BL
         public void returnloan(int returnloan)
         {
             balances = balances - returnloan;
-            loans = loans - returnloan;
+            ldata.loans = ldata.loans - returnloan;
         }
         public void resetcomplain()
         {
@@ -202,8 +272,8 @@ namespace BMS_22.BL
         }
         public void freezeueraccount(int duration)
         {
-            status = "Freeze";
-            fdurations = duration;
+            fdata.status = "Freeze";
+            fdata.fdurations = duration;
         }
         public void editmanagerboth(string newname, string newpassword)
         {
@@ -212,17 +282,17 @@ namespace BMS_22.BL
         }
         public void providingloan(int amount, string issue, string limit, ref int bankbalance)
         {
-            loans = amount;
+            ldata.loans = amount;
             bankbalance = bankbalance - amount;
-            issueloans = issue;
-            limitloans = limit;
+            ldata.issueloans = issue;
+            ldata.limitloans = limit;
         }
         public int numberofloanpayyed(List<data> s)
         {
             int number = 0;
             for (int index = 1; index < s.Count; index++)
             {
-                if (s[index].loans != 0)
+                if (s[index].ldata.loans != 0)
                 {
                     number++;
                 }
@@ -234,7 +304,8 @@ namespace BMS_22.BL
             int number = 0;
             for (int index = 1; index < s.Count; index++)
             {
-                if (s[index].insurances != 0)
+                
+                if (s[index].idata.insurances != 0)
                 {
                     number++;
                 }
@@ -262,7 +333,7 @@ namespace BMS_22.BL
             {
                 if (s[index].names == name && s[index].accountnumbers == accountnumber)
                 {
-                    s[index].status = "UnFreeze";
+                    s[index].fdata.status = "UnFreeze";
                     ischeck = true;
                     break;
                 }
@@ -289,11 +360,7 @@ namespace BMS_22.BL
                     s[index].names = "";
                     s[index].passwords = "";
                     s[index].accountnumbers = 0;
-                    s[index].loans = 0;
                     s[index].types = "";
-                    s[index].insurances = 0;
-                    s[index].durations = 0;
-                    s[index].installments = "";
                     position1 = index;
                 }
             }
@@ -325,4 +392,6 @@ namespace BMS_22.BL
         }
 
     }
+    
+
 }
