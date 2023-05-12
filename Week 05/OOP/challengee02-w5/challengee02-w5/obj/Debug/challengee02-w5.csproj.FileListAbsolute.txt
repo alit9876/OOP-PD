@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\bin\Debug\challengee02-w5.exe.config
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\bin\Debug\challengee02-w5.exe
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\bin\Debug\challengee02-w5.pdb
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\obj\Debug\challengee02-w5.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\obj\Debug\challengee02-w5.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\obj\Debug\challengee02-w5.exe
+C:\Users\dell\source\repos\challengee02-w5\challengee02-w5\obj\Debug\challengee02-w5.pdb

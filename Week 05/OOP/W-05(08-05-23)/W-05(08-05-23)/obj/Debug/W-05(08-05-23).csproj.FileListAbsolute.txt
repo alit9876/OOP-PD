@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\bin\Debug\W-05(08-05-23).exe.config
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\bin\Debug\W-05(08-05-23).exe
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\bin\Debug\W-05(08-05-23).pdb
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\obj\Debug\W-05(08-05-23).csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\obj\Debug\W-05(08-05-23).csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\obj\Debug\W-05(08-05-23).exe
+C:\Users\dell\source\repos\W-05(08-05-23)\W-05(08-05-23)\obj\Debug\W-05(08-05-23).pdb
