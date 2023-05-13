@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\bin\Debug\BMS-22(bl,dl,ul).exe.config
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\bin\Debug\BMS-22(bl,dl,ul).exe
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\bin\Debug\BMS-22(bl,dl,ul).pdb
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\obj\Debug\BMS-22(bl,dl,ul).csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\obj\Debug\BMS-22(bl,dl,ul).csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\obj\Debug\BMS-22(bl,dl,ul).exe
+C:\Users\dell\source\repos\BMS-22(bl,dl,ul)\BMS-22(bl,dl,ul)\obj\Debug\BMS-22(bl,dl,ul).pdb
