@@ -1,0 +1,10 @@
+C:\Users\dell\source\repos\Warmaze\Warmaze\obj\Debug\Warmaze.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\Warmaze\Warmaze\obj\Debug\Warmaze.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\Warmaze\Warmaze\bin\Debug\Warmaze.exe.config
+C:\Users\dell\source\repos\Warmaze\Warmaze\bin\Debug\Warmaze.exe
+C:\Users\dell\source\repos\Warmaze\Warmaze\bin\Debug\Warmaze.pdb
+C:\Users\dell\source\repos\Warmaze\Warmaze\bin\Debug\EZInput.dll
+C:\Users\dell\source\repos\Warmaze\Warmaze\bin\Debug\EZInput.xml
+C:\Users\dell\source\repos\Warmaze\Warmaze\obj\Debug\Warmaze.csproj.CopyComplete
+C:\Users\dell\source\repos\Warmaze\Warmaze\obj\Debug\Warmaze.exe
+C:\Users\dell\source\repos\Warmaze\Warmaze\obj\Debug\Warmaze.pdb
