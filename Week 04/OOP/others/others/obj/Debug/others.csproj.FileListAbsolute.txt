@@ -1,0 +1,7 @@
+F:\OOPs & Pd\Week 04\OOP\others\others\obj\Debug\others.csproj.AssemblyReference.cache
+F:\OOPs & Pd\Week 04\OOP\others\others\obj\Debug\others.csproj.CoreCompileInputs.cache
+F:\OOPs & Pd\Week 04\OOP\others\others\bin\Debug\others.exe.config
+F:\OOPs & Pd\Week 04\OOP\others\others\bin\Debug\others.exe
+F:\OOPs & Pd\Week 04\OOP\others\others\bin\Debug\others.pdb
+F:\OOPs & Pd\Week 04\OOP\others\others\obj\Debug\others.exe
+F:\OOPs & Pd\Week 04\OOP\others\others\obj\Debug\others.pdb
