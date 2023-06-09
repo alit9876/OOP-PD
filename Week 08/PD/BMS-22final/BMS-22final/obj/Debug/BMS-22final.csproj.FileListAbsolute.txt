@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\obj\Debug\BMS-22final.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\obj\Debug\BMS-22final.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\bin\Debug\BMS-22final.exe.config
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\bin\Debug\BMS-22final.exe
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\bin\Debug\BMS-22final.pdb
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\obj\Debug\BMS-22final.exe
+C:\Users\dell\source\repos\BMS-22final\BMS-22final\obj\Debug\BMS-22final.pdb
