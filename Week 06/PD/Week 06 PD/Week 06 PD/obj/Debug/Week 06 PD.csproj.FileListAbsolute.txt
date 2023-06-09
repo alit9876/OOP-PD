@@ -1,0 +1,10 @@
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\bin\Debug\Week 06 PD.exe.config
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\bin\Debug\Week 06 PD.exe
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\bin\Debug\Week 06 PD.pdb
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\bin\Debug\EZInput.dll
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\bin\Debug\EZInput.xml
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\obj\Debug\Week 06 PD.csproj.AssemblyReference.cache
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\obj\Debug\Week 06 PD.csproj.CoreCompileInputs.cache
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\obj\Debug\Week 06 PD.csproj.CopyComplete
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\obj\Debug\Week 06 PD.exe
+F:\OOPs & Pd\Week 06\PD\Week 06 PD\Week 06 PD\obj\Debug\Week 06 PD.pdb

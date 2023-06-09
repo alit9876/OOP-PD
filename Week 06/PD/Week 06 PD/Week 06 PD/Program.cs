@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using Week_06_PD.BL;
 
 namespace Week_06_PD
@@ -12,6 +13,7 @@ namespace Week_06_PD
         static void Main(string[] args)
         {
             //t1();
+            //t2();
         }
         static void t1()
         {
@@ -87,6 +89,43 @@ namespace Week_06_PD
                 }
             } while (option != 2);
         }
+        static void t2()
+        {
+            string path = "maze.txt";
+            Grid mazegrid = new Grid(24, 71, path);
+            Pacman player = new Pacman(9, 32, mazegrid);
+            Ghost g1 = new Ghost(15, 39, "left",'H', 0.1F, ' ', mazegrid);
+            Ghost g2 = new Ghost(20, 37, "up", 'V', 0.2F, ' ', mazegrid);
+            Ghost g3 = new Ghost(19, 26, "up", 'R', 1F,' ',mazegrid) ;
+            Ghost g4 = new Ghost(18,21,"up",'C',0.5F,' ',mazegrid);
 
+            List<Ghost> enemies = new List<Ghost>();
+            enemies.Add(g1);
+            enemies.Add(g2);
+            enemies.Add(g3);
+            enemies.Add(g4);
+
+            mazegrid.Draw();
+            player.Print(player.X, player.Y);
+
+            bool gamerunnig = true;
+            while(gamerunnig)
+            {
+                Thread.Sleep(90);
+                player.PrintScore();
+                player.Remove(player.X,player.Y);
+                player.Move();
+                player.Print(player.X, player.Y);
+
+                foreach(Ghost g in enemies)
+                {
+                    g.Remove(g.X,g.Y);
+                    g.move();
+                    g.Print(g.X,g.Y);
+                }
+
+                Console.ReadKey();
+            }
+        }
     }
 }
