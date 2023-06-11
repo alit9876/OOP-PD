@@ -10,7 +10,6 @@ namespace BMS_22_with_oop_.BL
 {
     class admin: user
     {
-        freeze fdata = new freeze();
         public admin(string name, string password) : base(name, password)
         {
             this.roles = "admin";

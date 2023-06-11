@@ -13,6 +13,7 @@ namespace BMS_22_with_oop_.BL
         protected string names;
         protected string passwords;
         protected string roles;
+        protected freeze fdata = new freeze();
         public user()
         {
 

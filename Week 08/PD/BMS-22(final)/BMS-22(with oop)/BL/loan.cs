@@ -47,5 +47,13 @@ namespace BMS_22_with_oop_.BL
         {
             return limitloans;
         }
+        public  void providingloan(loan obj, ref int bankbalance)
+        {
+            loans = obj.loans;
+            bankbalance = bankbalance - obj.loans;
+            issueloans = (obj.issueloans);
+            limitloans = (obj.limitloans);
+        }
+        
     }
 }

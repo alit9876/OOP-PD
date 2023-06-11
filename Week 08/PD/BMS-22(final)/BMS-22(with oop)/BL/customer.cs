@@ -16,7 +16,6 @@ namespace BMS_22_with_oop_.BL
         private string complains;
         private insurance Idata = new insurance();
         private loan ldata = new loan();
-        private freeze fdata = new freeze();
         public customer()
         {
 
@@ -176,10 +175,7 @@ namespace BMS_22_with_oop_.BL
         }
         public override void providingloan(loan obj, ref int bankbalance)
         {
-            ldata.setloans(obj.getterloans());
-            bankbalance = bankbalance - obj.getterloans();
-            ldata.setissueloans(obj.getterissueloans());
-            ldata.setlimitloans(obj.getterlimitloans());
+            ldata.providingloan(obj, ref bankbalance);
         }
         public override void depositmoney(int deposit)
         {
@@ -234,9 +230,7 @@ namespace BMS_22_with_oop_.BL
         }
         public override void applyforinsurance(insurance obj)
         {
-            Idata.setinsurances(obj.getterinsurances());
-            Idata.setdurations(obj.getterdurations());
-            Idata.setinstallments(obj.getterinstallments());
+            Idata.applyforinsurance(obj);
         }
         public override void payable( int amount)
         {

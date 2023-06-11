@@ -47,5 +47,11 @@ namespace BMS_22_with_oop_.BL
         {
             return installments;
         }
+        public void applyforinsurance(insurance obj)
+        {
+            insurances = (obj.insurances);
+            durations = (obj.durations);
+            installments = (obj.installments);
+        }
     }
 }
