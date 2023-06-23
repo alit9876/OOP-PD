@@ -1,0 +1,20 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\bin\Debug\PACMAN.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\bin\Debug\PACMAN.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\bin\Debug\PACMAN.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\bin\Debug\EZInput.dll
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\bin\Debug\EZInput.xml
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\obj\Debug\PACMAN.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\obj\Debug\PACMAN.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\obj\Debug\PACMAN.csproj.CopyComplete
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\obj\Debug\PACMAN.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PACMAN\PACMAN\obj\Debug\PACMAN.pdb
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\bin\Debug\PACMAN.exe.config
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\bin\Debug\PACMAN.exe
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\bin\Debug\PACMAN.pdb
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\bin\Debug\EZInput.dll
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\bin\Debug\EZInput.xml
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\obj\Debug\PACMAN.csproj.AssemblyReference.cache
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\obj\Debug\PACMAN.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\obj\Debug\PACMAN.csproj.CopyComplete
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\obj\Debug\PACMAN.exe
+C:\Users\dell\Desktop\Week 10\PACMAN\PACMAN\obj\Debug\PACMAN.pdb
