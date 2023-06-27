@@ -21,7 +21,6 @@ namespace PACMAN
             GameCell H1Start = new GameCell(15, 15, grid);
             Horizontal_Ghost H1Ghost = new Horizontal_Ghost(GameDirection.Left, 'G', H1Start);
 
-
             GameCell V1Start = new GameCell(15, 50, grid);
             Vertical_Ghost V1Ghost = new Vertical_Ghost(GameDirection.Up, 'Y', V1Start);
 
@@ -59,7 +58,6 @@ namespace PACMAN
                 {
                     MovementClass.moveGameObject(pacman, GameDirection.Left);
                 }
-
                 
                 for(int x=0;x< listGhost.Count;x++)
                 {
@@ -68,8 +66,6 @@ namespace PACMAN
             }
         }
        
-
-        
 
         static void printMaze(GameGrid grid)
         {

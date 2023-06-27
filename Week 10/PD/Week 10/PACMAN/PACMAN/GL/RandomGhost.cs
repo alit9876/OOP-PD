@@ -35,6 +35,7 @@ namespace PACMAN.GL
             {
                 direction = GameDirection.Down;
             }
+
             if (direction == GameDirection.Left)
             {
                 if (CurrentCell.Y > 0)
@@ -84,7 +85,7 @@ namespace PACMAN.GL
 
         public override void movement(GameCell nextCell)
         {
-            if (nextCell != null)
+            if(nextCell != null)
             {
                 GameObject newGo = new GameObject(GameObjectType.NONE, ' ');
                 GameCell currentCell = this.CurrentCell;

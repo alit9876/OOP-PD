@@ -1,0 +1,12 @@
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week-10.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week_10.addUSERFORM.resources
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week_10.EditUserform.resources
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week_10.Properties.Resources.resources
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week-10.csproj.GenerateResource.cache
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week-10.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\week-09\week-10\week-10\bin\Debug\week-10.exe.config
+C:\Users\dell\source\repos\week-09\week-10\week-10\bin\Debug\week-10.exe
+C:\Users\dell\source\repos\week-09\week-10\week-10\bin\Debug\week-10.pdb
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week-10.exe
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week-10.pdb
+C:\Users\dell\source\repos\week-09\week-10\week-10\obj\Debug\week_10.Form1.resources
